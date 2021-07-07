@@ -122,6 +122,7 @@ is.integer(v8) # genera una sola respuesta, True o False
 ## Ej 2
 
 v11 = round(seq(from=1000,to=10000,length=100),1)
+
 v11
 
 # ?cuantos valores estan en el rango de 5000 a 8000?
@@ -136,7 +137,7 @@ table(vl)
 
 vl_no = !vl
 vl_no
-table(vl_no) ######################### FIN SESION 1
+table(vl_no) ######################### FIN SESION 1----
 
 # VECTORES DE CADENA ----
 
@@ -166,7 +167,6 @@ paste(v6, v8, sep = "-")
 
 vc3 = paste(c("Prod"), 1:10, sep = "-", collapse = "/")
 vc3
-
 
 # * conteo de caracteres ----
 
@@ -279,7 +279,6 @@ names(v13) = c("edad", "ingresos", "deudas", "score")
 
 v13[c("ingresos", "score")]
 
-
 # MATRICES ----
 
 m1 = matrix(1:20, nrow=5, ncol=4, byrow = F)
@@ -304,7 +303,7 @@ set.seed(123)
 m5 = matrix(rpois(16,5), 4, 4)
 m5
 
-det(m5)
+det(m5) #Determinante de una matriz
 
 
 library(MASS)
@@ -382,11 +381,9 @@ str(df)
 
 library(tibble)
 
-df2 = data_frame(id, nivel_educ, salario)  # tibble()
+df2 = tibble(id, nivel_educ, salario)  # tibble()
 df2
 str(df2)
-
-
 
 genero = c(rep(1,5), rep(2,5))
 genero
@@ -400,8 +397,8 @@ str(df)
 
 df$genero = as.factor(df$genero)
 str(df)
-
-df
+df$genero = NULL #Borrar columna
+tibble(df)
 
 #Cambiar de nombre a los niveles del factor
 

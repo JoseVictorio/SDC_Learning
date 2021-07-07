@@ -6,7 +6,7 @@
 10 <= 3
 10 > 3
 10 >= 3
-10 == 3 #5 es igual a tres? T o F
+5 == 3 #5 es igual a tres? T o F
 10 != 3 # 10 es diferente de 3
 
 # OPERACIONES LOGICAS ----
@@ -15,7 +15,6 @@ TRUE | FALSE
 TRUE & FALSE # "Y"
 !TRUE #  ! negacion
 isTRUE(TRUE)
-
 TRUE + TRUE # 1 + 1
 FALSE + FALSE # 0 + 0
 TRUE + FALSE # 1 + 0 
@@ -82,10 +81,6 @@ min(v8)
 max(v8)
 sd(v8)
 
-for (i in 1:length(v8)){
-  print(is.numeric(i))
-}
-
 
 v9 = c(v8, NA) # not available
 v9
@@ -106,7 +101,7 @@ sd(v9, na.rm = T)
 
 v9
 
-# ¿cuales son los valores NA?
+# ?cuales son los valores NA?
 v10 = is.na(v9)
 v10
 
